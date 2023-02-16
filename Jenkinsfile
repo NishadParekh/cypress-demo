@@ -3,7 +3,7 @@ node {
     git branch: 'main', url: 'https://github.com/NishadParekh/cypress-demo.git'
   }
   stage ('install node js') {
-    sh "sudo apt install nodejs"
+    sh "apt install nodejs"
     sh "npm init"
    }
   stage('intall cypress') {
