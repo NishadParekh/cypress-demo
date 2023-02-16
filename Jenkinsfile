@@ -10,7 +10,7 @@ node {
    }
   stage('intall cypress') {
     sh "npm install --save -dev cypress"
-    sh "npx cypress open"
+    sh "npx cypress run"
     
   }
 }
