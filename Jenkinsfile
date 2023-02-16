@@ -5,6 +5,7 @@ node {
   stage ('install node js') {
     sh "apt update" 
     sh "apt install nodejs -y"
+    sh "apt install npm -y"
     sh "npm init"
    }
   stage('intall cypress') {
